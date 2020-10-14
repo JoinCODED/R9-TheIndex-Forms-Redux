@@ -3,7 +3,7 @@ import Modal from "react-responsive-modal";
 
 import AuthorForm from "./AuthorForm";
 
-const AddAuthorCard = (props) => {
+const AddAuthorCard = () => {
   const [open, setOpen] = useState(false);
 
   const openModal = () => setOpen(true);

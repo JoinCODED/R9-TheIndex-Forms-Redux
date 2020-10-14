@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
     case ADD_AUTHOR:
       return {
         ...state,
-        authors: [action.payload].concat(state.authors),
+        authors: [action.payload, ...state.authors],
       };
     default:
       return state;

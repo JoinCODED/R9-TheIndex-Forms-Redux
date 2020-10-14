@@ -19,6 +19,7 @@ export const fetchAuthors = () => async (dispatch) => {
 
 //POST THE AUTHOR TO https://the-index-api.herokuapp.com/api/authors/
 export const postAuthor = (newAuthor, closeModal) => async (dispatch) => {
+  console.log("postAuthor -> newAuthor", newAuthor);
   try {
     const res = await instance.post("/api/authors/", newAuthor);
     const author = res.data;
